@@ -19,6 +19,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+<div id="lightbox" class="lightbox">
+
+    <span class="close-lightbox">&times;</span>
+
+    <img id="lightbox-img">
+
+</div>
+
 <body>
 
 <div class="bg-gradient"></div>
@@ -141,81 +149,106 @@
 
         <div class="projects-grid">
 
-            <div class="project-card">
+            <div class="project-card before-after-card">
 
-                <img src="assets/projects/optimize_spine_animationBAG_.gif" alt="Spine Optimization">
+    <div class="project-content">
 
-                <div class="project-content">
+        <h3>Spine Animation Optimization</h3>
 
-                    <h3>Spine Animation Optimization</h3>
+        <p>
+            Optimized Spine animation by reducing visible
+            <strong>Vertices</strong>,
+            <strong>Triangles</strong> and
+            <strong>Clipped Triangles</strong>,
+            significantly improving rendering performance and FPS
+            while preserving the final visual quality.
+        </p>
 
-                    <p>
-                        Optimized a complex Spine animation by reducing visible attachments and mesh complexity while preserving the final visual quality.
-                    </p>
+    </div>
 
-                    <span>Spine • Photoshop</span>
+    <div class="comparison">
 
-                </div>
+        <div class="comparison-side">
 
-            </div>
+            <h4>Before</h4>
 
-            <div class="project-card">
+            <img src="assets/projects/optimize_spine_animationBAG_.gif">
 
-                <img src="assets/projects/optimize_spine_animationFixed_.gif" alt="Spine Optimization">
+            <ul>
 
-                <div class="project-content">
+                <li>Visible: <strong>178</strong></li>
+                <li>Vertices: <strong>2,156</strong></li>
+                <li>Triangles: <strong>2,264</strong></li>
+                <li>Clipped Triangles: <strong>2,200</strong></li>
 
-                    <h3>Optimized Animation Result</h3>
+            </ul>
 
-                    <p>
-                        Improved rendering performance and reduced runtime overhead while maintaining the original animation quality.
-                    </p>
+        </div>
 
-                    <span>Spine • Photoshop</span>
+        <div class="comparison-side">
 
-                </div>
+            <h4>After</h4>
 
-            </div>
+            <img src="assets/projects/optimize_spine_animationFixed_.gif">
 
-            <div class="project-card">
+            <ul>
 
-                <img src="assets/projects/batches_.gif" alt="Batch Optimization">
+                <li>Visible: <strong>38</strong></li>
+                <li>Vertices: <strong>274</strong></li>
+                <li>Triangles: <strong>245</strong></li>
+                <li>Clipped Triangles: <strong>0</strong></li>
 
-                <div class="project-content">
-
-                    <h3>Rendering Performance</h3>
-
-                    <p>
-                        Analyzed rendering statistics and optimized UI assets to reduce draw calls and improve batching efficiency.
-                    </p>
-
-                    <span>Spine • Game Engine</span>
-
-                </div>
-
-            </div>
-
-            <div class="project-card">
-
-                <img src="assets/projects/batches_optimize_.gif" alt="Batch Optimization">
-
-                <div class="project-content">
-
-                    <h3>Batch Optimization</h3>
-
-                    <p>
-                        Reorganized rendering order and textures to achieve more efficient batching for real-time gameplay.
-                    </p>
-
-                    <span>Spine • Photoshop</span>
-
-                </div>
-
-            </div>
+            </ul>
 
         </div>
 
     </div>
+
+</div>
+
+<div class="project-card before-after-card">
+
+    <div class="project-content">
+
+        <h3>Batch Optimization</h3>
+
+        <p>
+            Reduced rendering batches by using a named texture atlas,
+            allowing the engine to group sprites more efficiently and
+            cutting the batch count by approximately 50%.
+        </p>
+
+    </div>
+
+    <div class="comparison">
+
+        <div class="comparison-side">
+
+            <h4>Before</h4>
+
+            <img src="assets/projects/batches_.gif">
+
+            <img class="metrics-image"
+                 src="assets/images/batches_before.png"
+                 alt="Before Metrics">
+
+        </div>
+
+        <div class="comparison-side">
+
+            <h4>After</h4>
+
+            <img src="assets/projects/batches_optimize_.gif">
+
+            <img class="metrics-image"
+                 src="assets/images/batches_after.png"
+                 alt="After Metrics">
+
+        </div>
+
+    </div>
+
+</div>            
 
 </section>
 

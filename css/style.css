@@ -453,3 +453,181 @@ section{
     color:#09090B;
 
 }
+/* ========================= */
+/* BEFORE / AFTER */
+/* ========================= */
+
+.before-after-card{
+
+    grid-column:1/-1;
+
+}
+
+.comparison{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    padding:0 30px 35px;
+
+}
+
+.comparison-side{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.comparison-side h4{
+
+    text-align:center;
+
+    padding:18px;
+
+    font-size:22px;
+
+    color:#06B6D4;
+
+}
+
+.comparison-side img{
+
+    width:100%;
+    height:320px;
+
+    object-fit:contain;
+    object-position:top;
+
+    display:block;
+
+    background:#111;
+
+    cursor:zoom-in;
+
+}
+
+.comparison-side ul{
+
+    list-style:none;
+
+    padding:25px;
+
+}
+
+.comparison-side li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    color:#CBD5E1;
+
+}
+
+.comparison-side strong{
+
+    color:white;
+
+}
+
+@media(max-width:980px){
+
+    .comparison{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================= */
+/* LIGHTBOX */
+/* ========================= */
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.9);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9999;
+
+}
+
+.lightbox.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#lightbox-img{
+
+    max-width:95vw;
+
+    max-height:95vh;
+
+    object-fit:contain;
+
+    object-position:top;
+
+    border-radius:12px;
+
+    box-shadow:0 20px 80px rgba(0,0,0,.6);
+
+}
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:25px;
+
+    right:40px;
+
+    color:white;
+
+    font-size:46px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+.metrics-image{
+
+    width:100%;
+    margin-top:18px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.08);
+
+}
