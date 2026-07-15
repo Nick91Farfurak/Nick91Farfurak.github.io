@@ -3,7 +3,7 @@ console.log("Portfolio Loaded");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 
-document.querySelectorAll(".comparison-side img").forEach(img => {
+document.querySelectorAll(".project-card img").forEach(img => {
 
     img.addEventListener("click", () => {
 
