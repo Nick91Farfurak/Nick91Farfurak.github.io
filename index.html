@@ -42,11 +42,11 @@
 
         <nav>
 
-           <!-- <a href="#about">About</a>-->
-
-            <!--<a href="#skills">Skills</a>-->
-
            <a href="#projects">Projects</a>
+
+           <a href="#tools">JSX Scripts</a>
+
+           <a href="#practice">Animation Practice</a>
 
            <a href="#contact">Contact</a>
 
@@ -250,6 +250,8 @@
     </div>
 
 </div>
+
+
 <div class="project-card before-after-card">
 
     <div class="project-content">
@@ -315,8 +317,323 @@
         </div>
 
     </div>
+</div>
 
-</div>            
+</section>
+
+<section id="featured-project">
+
+    <div class="container">
+
+        <span class="featured-label">
+            FEATURED PROJECT
+        </span>
+
+        <h2 class="section-title">
+            Bonus Pick Game
+        </h2>
+
+        <p class="section-subtitle">
+            One of the most technically complex bonus game systems I integrated.
+        </p>
+
+
+        <div class="featured-image">
+
+            <img class="featured-gif"
+         src="assets/projects/bonusPickGame.gif"
+         alt="Bonus Pick Game">
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <span>1300+</span>
+                <small>Objects</small>
+            </div>
+
+            <div class="feature-card">
+                <span>Spine</span>
+                <small>Animations</small>
+            </div>
+
+            <div class="feature-card">
+                <span>After Effects</span>
+                <small>Animations</small>
+            </div>
+
+            <div class="feature-card">
+                <span>RenderTarget</span>
+                <small>Optimization</small>
+            </div>
+
+        </div>
+
+
+        <div class="feature-content">
+
+            <div>
+
+                <h3>Overview</h3>
+
+                <p>
+
+Integrated and configured one of the most technically complex bonus game systems consisting of more than <strong>1,300 objects</strong>.
+
+The project combines <strong>Spine</strong> and <strong>After Effects</strong> animations into a single production-ready game feature.
+
+Each object with an assigned <strong>instance name</strong> contains its own Event, allowing gameplay logic to be driven directly from animation timelines.
+
+When an animation reaches a specific frame, the Event automatically triggers the required state in another object, ensuring precise synchronization between animations and gameplay.
+
+                </p>
+
+
+                <div class="render-target">
+
+                    <h3>Performance Optimization</h3>
+
+                    <p>
+
+To optimize video resources, the project extensively utilized <strong>RenderTarget</strong>.
+
+Animated content was rendered once, cached, and reused efficiently, reducing GPU load and video memory usage while maintaining visual quality.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3>Example Event</h3>
+
+<pre><code>{
+"type":"event",
+"payload":{
+"type":"stateEvent",
+"stateMachineId":"frame_miniJp",
+"stateName":"win_miniJp_0"
+}
+}</code></pre>
+
+
+                <div class="featured-image">
+
+                 <img src="assets/images/bonusPickGameEvent.png">
+
+                </div>
+
+              <div class="featured-image">
+
+               <img src="assets/images/bonusPickGame.png">
+
+              </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="tools">
+
+    <div class="container">
+
+        <span class="featured-label">
+            AUTOMATION
+        </span>
+
+        <h2 class="section-title">
+            JSX Scripts
+        </h2>
+
+        <p class="section-subtitle">
+            Custom Adobe Photoshop JSX scripts developed to automate repetitive production tasks,
+            reduce manual work, and speed up asset preparation.
+        </p>
+
+        <div class="tools-grid">
+
+            <!-- Script 1 -->
+
+            <article class="tool-card">
+
+                <div class="tool-header">
+
+                    <div class="tool-icon">
+                        <i class="fa-solid fa-file-code"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>IconSize256x256.jsx</h3>
+
+                        <span>Adobe Photoshop JSX</span>
+
+                    </div>
+
+                </div>
+
+                <p>
+
+                    Automatically exports layers as optimized PNG icons,
+                    resizes the document and canvas, preserves layer names,
+                    and prepares assets for production.
+
+                </p>
+
+                <ul class="tool-features">
+
+                    <li>✓ Batch Export</li>
+                    <li>✓ 256×256 Resize</li>
+                    <li>✓ Canvas Resize</li>
+                    <li>✓ PNG Optimization</li>
+
+                </ul>
+
+                <div class="tool-buttons">
+
+                    <a href="https://github.com/Nick91Farfurak/Portfolio/blob/main/ScriptsJsx/iconSize256x256.jsx"
+                       target="_blank"
+                       class="btn-outline">
+
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+
+                    </a>
+
+                    <a href="ScriptsJsx/iconSize256x256.jsx"
+                       download
+                       class="btn-outline">
+
+                        <i class="fa-solid fa-download"></i>
+                        Download
+
+                    </a>
+
+                    <a href="assets/projects/script.mp4"
+                       target="_blank"
+                       class="btn">
+
+                        <i class="fa-solid fa-play"></i>
+                        Demo
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Script 2 -->
+
+            <article class="tool-card">
+
+                <div class="tool-header">
+
+                    <div class="tool-icon">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Hide & Export</h3>
+
+                        <span>Adobe Photoshop JSX</span>
+
+                    </div>
+
+                </div>
+
+                <p>
+
+                    Automatically hides unnecessary layers before exporting icons,
+                    reducing repetitive manual work during production.
+
+                </p>
+
+                <ul class="tool-features">
+
+                    <li>✓ Hide Layers</li>
+                    <li>✓ Batch Export</li>
+                    <li>✓ Faster Workflow</li>
+                    <li>✓ Production Ready</li>
+
+                </ul>
+
+                <div class="tool-buttons">
+
+                    <a href="ScriptsJsx/iconSize256x256_Hide.jsx"
+                       download
+                       class="btn">
+
+                        Download
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Script 3 -->
+
+            <article class="tool-card">
+
+                <div class="tool-header">
+
+                    <div class="tool-icon">
+                        <i class="fa-solid fa-folder-minus"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Delete Folder</h3>
+
+                        <span>Adobe Photoshop JSX</span>
+
+                    </div>
+
+                </div>
+
+                <p>
+
+                    Utility script that removes unnecessary folders from Photoshop
+                    documents and helps keep production files clean.
+
+                </p>
+
+                <ul class="tool-features">
+
+                    <li>✓ Clean Documents</li>
+                    <li>✓ Remove Folders</li>
+                    <li>✓ Faster Pipeline</li>
+                    <li>✓ One Click</li>
+
+                </ul>
+
+                <div class="tool-buttons">
+
+                    <a href="ScriptsJsx/DeleteFolder.jsx"
+                       download
+                       class="btn">
+
+                        Download
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -396,6 +713,30 @@
                     </p>
 
                     <span>Spine</span>
+
+                </div>
+
+            </div>
+            <div class="practice-card">
+
+                <img src="assets/projects/background_anim.gif"
+                     alt="Background Animation VFX">
+
+                <img src="assets/projects/background_anim_0.gif"
+                     alt="Background Animation VFX">
+
+                <div class="practice-content">
+
+                    <h3>Background Animation VFX</h3>
+
+                    <p>
+                      Created a production-ready animated background effect using
+                      <strong>Neutrino Particle System</strong>,
+                      focusing on layered particle animation, seamless looping,
+                      smooth motion, and optimized real-time performance for casino games.
+                   </p>
+
+                  <span>Neutrino Particle System</span>
 
                 </div>
 

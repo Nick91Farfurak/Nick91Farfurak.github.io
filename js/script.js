@@ -2,8 +2,14 @@ console.log("Portfolio Loaded");
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".close-lightbox");
 
-document.querySelectorAll(".project-card img").forEach(img => {
+// Всі картинки портфоліо, крім картинки всередині lightbox
+document.querySelectorAll(
+    ".project-card img, .featured-gif, .feature-content img, .practice-card img"
+).forEach(img => {
+
+    img.style.cursor = "zoom-in";
 
     img.addEventListener("click", () => {
 
@@ -14,12 +20,14 @@ document.querySelectorAll(".project-card img").forEach(img => {
 
 });
 
-document.querySelector(".close-lightbox").addEventListener("click", () => {
+// Закриття по хрестику
+closeBtn.addEventListener("click", () => {
 
     lightbox.classList.remove("active");
 
 });
 
+// Закриття по фону
 lightbox.addEventListener("click", e => {
 
     if (e.target === lightbox) {
@@ -30,6 +38,7 @@ lightbox.addEventListener("click", e => {
 
 });
 
+// Закриття по Esc
 document.addEventListener("keydown", e => {
 
     if (e.key === "Escape") {
